@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Top News</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Top Nuetralized News by Category</h1>
+
+  <div class="category-buttons">
+    <button class="category-btn" data-category="business">Business</button>
+    <button class="category-btn" data-category="entertainment">Entertainment</button>
+    <button class="category-btn" data-category="health">Health</button>
+    <button class="category-btn" data-category="science">Science</button>
+    <button class="category-btn" data-category="sports">Sports</button>
+    <button class="category-btn" data-category="technology">Technology</button>
+  </div>
+
+  <div class="controls">
+    <input type="number" id="count" placeholder="Number of news (default 3)" min="1" />
+    <button onclick="getNews()">Get News</button>
+  </div>
+
+  <div id="news-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
